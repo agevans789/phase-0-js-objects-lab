@@ -22,6 +22,10 @@ function logTicketType(attendee) {
 function updateTicketType(attendee, newTicketType) {
   attendee.ticketType = newTicketType
 }
+
+function updateTicketPrice(attendee, newTicketPrice) {
+  attendee.ticketPrice = newTicketPrice
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
@@ -33,5 +37,6 @@ module.exports = {
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
 
 };
+
 
 
