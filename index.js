@@ -26,6 +26,10 @@ function updateTicketType(attendee, newTicketType) {
 function updateTicketPrice(attendee, newTicketPrice) {
   attendee.ticketPrice = newTicketPrice
 }
+
+function removeEventProperty(attendee) {
+  console.log(attendee.splice(event))
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
@@ -37,6 +41,7 @@ module.exports = {
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
 
 };
+
 
 
 
