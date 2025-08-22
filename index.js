@@ -1,7 +1,11 @@
 //Write your code here
+const attendeeId = "T001"
+const name = "Alice Smith"
+const event = "JavaScript Conference"
+const ticketType = "VIP"
+const ticketPrice = 150.00
 
-
-
+function logAttendeeName(attendee) {const attendee }
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
