@@ -5,12 +5,22 @@ const event = "JavaScript Conference"
 const ticketType = "VIP"
 const ticketPrice = 150.00
 
+const attendee = []
+
 function logAttendeeName(attendee) {
   console.log(attendee.name)
 }
 
 function logTicketPrice(attendee) {
   console.log(attendee.ticketPrice)
+}
+
+function logTicketType(attendee) {
+  console.log(attendee.ticketType)
+}
+
+function updateTicketType(attendee, newTicketType) {
+  attendee.ticketType = newTicketType
 }
 //Needed for the tests to work. Don't modify
 module.exports = {
@@ -23,4 +33,5 @@ module.exports = {
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
 
 };
+
 
