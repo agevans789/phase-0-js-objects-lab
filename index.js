@@ -8,6 +8,10 @@ const ticketPrice = 150.00
 function logAttendeeName(attendee) {
   console.log(attendee.name)
 }
+
+function logTicketPrice(attendee) {
+  console.log(attendee.ticketPrice)
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
@@ -19,3 +23,4 @@ module.exports = {
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
 
 };
+
