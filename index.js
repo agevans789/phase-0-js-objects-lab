@@ -5,7 +5,9 @@ const event = "JavaScript Conference"
 const ticketType = "VIP"
 const ticketPrice = 150.00
 
-function logAttendeeName(attendee) {const attendee }
+function logAttendeeName(attendee) {
+  console.log(attendee.name)
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
@@ -15,4 +17,5 @@ module.exports = {
   ...(typeof updateTicketPrice !== 'undefined' && { updateTicketPrice }),
   ...(typeof removeEventProperty !== 'undefined' && { removeEventProperty }),
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
+
 };
