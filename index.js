@@ -8,15 +8,15 @@ const ticketPrice = 150.00
 const attendee = []
 
 function logAttendeeName(attendee) {
-  console.log(attendee.name)
+  attendee.push(name)
 }
 
 function logTicketPrice(attendee) {
-  console.log(attendee.ticketPrice)
+  attendee.push(ticketPrice)
 }
 
 function logTicketType(attendee) {
-  console.log(attendee.ticketType)
+  attendee.push(ticketType)
 }
 
 function updateTicketType(attendee, newTicketType) {
@@ -28,10 +28,15 @@ function updateTicketPrice(attendee, newTicketPrice) {
 }
 
 function removeEventProperty(attendee) {
-  console.log(attendee.splice(event))
+   attendee.splice(event)
 }
 
+let checkedIn = true
+
 function addCheckedInProperty(attendee) {
+  attendee.push(checkedIn)
+}
+
   
 //Needed for the tests to work. Don't modify
 module.exports = {
@@ -44,6 +49,7 @@ module.exports = {
   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
 
 };
+
 
 
 
